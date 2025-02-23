@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Company Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome for Hamburger Icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header with Logo and Hamburger Menu -->
+  <header>
+    <div class="logo">
+      <img src="assets/logo.svg" alt="Company Logo">
+    </div>
+    <nav>
+      <div class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+        <h1>Welcome to <span>Hailplus Inc.</span></h1>
+      <p>We create innovative solutions for your business.</p>
+      <a href="#contact" class="btn">Get Started</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>We are a team of passionate professionals dedicated to delivering high-quality services and solutions to our clients. Our mission is to help businesses grow and succeed in the digital world.</p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="service-cards">
+      <div class="card">
+        <h3>Web Development</h3>
+        <p>We build responsive and user-friendly websites tailored to your needs.</p>
+      </div>
+      <div class="card">
+        <h3>Graphic Design</h3>
+        <p>We create stunning visuals that represent your brand perfectly.</p>
+      </div>
+      <div class="card">
+        <h3>Digital Marketing</h3>
+        <p>We help you reach your target audience and grow your business online.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="portfolio">
+    <h2>Our Portfolio</h2>
+    <div class="portfolio-grid">
+      <div class="portfolio-item">
+        <img src="assets/IMG_0029.png" alt="Project 1">
+        <p>Project 1</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="assets/IMG_0035.png" alt="Project 2">
+        <p>Project 2</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="assets/IMG_0032.png" alt="Project 3">
+        <p>Project 3</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+      
+      <button type="submit">Send</button>
+    </form>
+    <p id="formResponse"></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Ifeoluwa. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
